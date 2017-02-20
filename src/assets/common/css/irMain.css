@@ -1,0 +1,231 @@
+/*Utility CLasess*/
+.m-t-xsm {  margin-top: 0.25rem !important; }
+
+.m-t-xlg{ margin: 4.8125rem !important; }
+
+.text-xs-center {  text-align: center !important;  }
+
+.m-lg {  margin: 2rem !important;  }
+
+.m-xlg {  margin: 2.8125rem !important;  }
+
+.db-container { background-color: #e8efed}
+
+.pad { padding: 10px}
+
+.pad-xs { padding: 0; font-weight: bold}
+
+.p-l-md { padding-left: 25px}
+
+.full-width { width: 100%}
+
+.half-width { width: 50%}
+
+.ft-right{ float: right }
+
+
+/*Login Page*/
+
+.login-logo { width: 23rem;}
+.login-form{
+  margin: 4.8125rem !important;
+  color: #5d5d5d;
+  background-color: #FFFFFF;
+  padding-right: 44px;
+  padding-left: 44px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  border-radius: 5px;
+}
+
+/*Signup-form*/
+
+.signup-form{
+  margin: -5.1875rem !important;
+  color: #5d5d5d;
+  background-color: #FFFFFF;
+  padding-right: 44px;
+  padding-left: 44px;
+  padding-top: 65px;
+  padding-bottom: 40px;
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .login-form {
+    margin: 0 !important;
+  }
+
+}
+
+  @media screen and (min-width: 992px ) and  (max-width: 1180px){
+    .login-form {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+}
+
+.form-content{ padding-top: 20px}
+
+.input-underline {
+  background: 0 0;
+  border: none;
+  box-shadow: none;
+  border-bottom: 2px solid #e7e7dd;
+  color: #999;
+  border-radius: 0; }
+
+.input-underline:focus {
+  border-bottom: 2px solid #6E8186;
+  box-shadow: none; }
+
+.has-error .form-control {
+  border-color: #a94442;
+   -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+   box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+}
+
+.has-error .form-control:focus {
+  border-color: #FFFFFF;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+  box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+}
+
+.login-txt-size{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*End Login Page*/
+
+Header
+.dashoard-logo {
+  width: 230px;
+  padding: 15px;
+  color: #FFFFFF;
+}
+
+.user-profile {
+  padding-right: 20px;
+  padding-top: 15px;
+  float: right;
+}
+
+
+/*End Header*/
+.nav-bg {
+  background-color: #6E8186;
+}
+
+.material-icons{ color: #FFFFFF}
+
+.navbar-brand {
+  width: 100px;
+  height: 30px;
+}
+
+.navbar {  margin-bottom: 0;  border: 0; }
+
+.head { height: 70px; background-color: #001a39 }
+
+.footer {
+  height: 23px;
+  background-color: #e7e7dd;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  padding-bottom: 6px;
+}
+
+.copyright {
+  float: left;
+}
+
+.feedcontact {
+  float: right;
+}
+
+table { display: table; border: 1px solid rgba(0, 0, 0, 0.12); border-spacing: 0; border-collapse: collapse; font-size: 14px; box-sizing: border-box; width: 100%; }
+table tr { position: relative; height: 36px; vertical-align: middle; }
+tbody tr :hover { background-color: #cccdc5; }
+table th, table td { padding: 0 16px; text-align: left; }
+table td { position: relative; vertical-align: middle; height: 36px; border-top: 1px solid rgba(0, 0, 0, 0.12); border-bottom: 1px solid rgba(0, 0, 0, 0.12); box-sizing: border-box; color: rgba(0, 0, 0, 0.87); }
+
+hr{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.rt-profile {
+  left: -150%;
+}
+
+.profile_info h2 {
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.profile_info span {
+  font-size: 15px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.profile_info{
+  margin-right: 10px;
+}
+
+.navbar-nav>li>a:focus, .navbar-nav>li>a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+.navbar-nav>li>a {
+  color: lightskyblue;
+  text-decoration: none;
+}
+
+.navbar-nav>li>a:active,  .navbar-nav>li>a:focus, .navbar-nav>li>a:hover{
+  background-color: #ffffff;
+}
+
+/*.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {*/
+  /*border-color: transparent;*/
+/*}*/
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  background-color: transparent;
+}
+
+
+.home-logo{
+  max-width: 450px;
+  height: auto;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: grey;
+  top: 200px;
+  height: 500px;
+}
+
+.bg-navbar{
+  background-color: #455d6f !important;
+}
+
+td a{
+  color: black;
+}
+
+.bg-login{
+  max-width: 450px;
+  height: auto;
+  border-radius: 18px;
+  overflow: hidden;
+}

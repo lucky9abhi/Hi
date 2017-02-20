@@ -1,0 +1,72 @@
+<div class="row">
+  <div class="col-xs-12">
+    <nav class="bg-navbar">
+      <div class="container-fluid">
+        <!--Brand and toggle get grouped for better mobile display-->
+        <div class="navbar-header">
+          <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+            <!--<span class="sr-only">Toggle navigation</span>-->
+            <!--<span class="icon-bar"></span>-->
+            <!--<span class="icon-bar"></span>-->
+            <!--<span class="icon-bar"></span>-->
+          <!--</button>-->
+        <!--<a class="navbar-brand" href="#"></a>-->
+        </div>
+        <div class="navbar-nav">
+          <ul class="nav nav-tabs" routerLinkActive="active">
+           <!-- <li><a class="glyphicon glyphicon-home" [routerLink]="['/home']"> Home</a></li>
+            <li><a class="glyphicon glyphicon-globe" [routerLink]="['/accounts']"> Master</a></li>
+            <li><a class="glyphicon glyphicon-wrench" [routerLink]="['/auth']"> Services</a></li>
+            <li><a class="glyphicon glyphicon-user" [routerLink]="['/groups']" > Admin</a></li>-->
+            <li *ngFor="let item of menuItems; let i = index">
+              <a [className]="item.menuStyle" [class.menuitem-active]="i == routerService.selectedMenuItemIndex"
+                 [routerLink]="[item.menuRoute]"> {{item.menuLabel}}</a>
+            </li>
+              <!--<div class="dropdown" dropdown>-->
+                <!--<button type="button" class="btn btn-outline-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dropdown-open>-->
+                  <!--Services <span class="caret"></span>-->
+                <!--</button>-->
+                <!--<ul class="dropdown-menu">-->
+                  <!--<li><a [routerLink]="['/auth']">Authorizations</a></li>-->
+                  <!--<li><a [routerLink]="['/invoice']">Inovice-Mgmt</a></li>-->
+                  <!--<li><a [routerLink]="['/pick']">Pick-Up</a></li>-->
+                  <!--<li><a [routerLink]="['/ps']">PS-Web</a></li>-->
+                <!--</ul>-->
+              <!--</div>-->
+            <!--<li>-->
+              <!--<div class="dropdown" dropdown *ngIf="isAdmin">-->
+                <!--<button type="button" class="btn btn-outline-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dropdown-open>-->
+                  <!--Admin <span class="caret"></span>-->
+                <!--</button>-->
+                <!--<ul class="dropdown-menu">-->
+                  <!--<li><a [routerLink]="['/groups']">Groups</a></li>-->
+                  <!--<li><a [routerLink]="['/users-profile']">User-Profiles</a></li>-->
+                <!--</ul>-->
+              <!--</div>-->
+            <!--</li>-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!--<nav class="navbar">-->
+  <!--<div class="container-fluid">-->
+    <!--<div class="navbar-header">-->
+      <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">-->
+        <!--<span class="icon-bar"></span>-->
+        <!--<span class="icon-bar"></span>-->
+        <!--<span class="icon-bar"></span>-->
+      <!--</button>-->
+    <!--</div>-->
+    <!--<div class="collapse navbar-collapse" id="myNavbar">-->
+      <!--<ul class="nav navbar-nav">-->
+        <!--<li><a class="glyphicon glyphicon-home" href="#"> Home</a></li>-->
+        <!--<li><a class="glyphicon glyphicon-globe" href="#"> Master</a></li>-->
+        <!--<li><a class="glyphicon glyphicon-wrench" href="#"> Services</a></li>-->
+        <!--<li><a class="glyphicon glyphicon-user" href="#"> Admin</a></li>-->
+      <!--</ul>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</nav>-->

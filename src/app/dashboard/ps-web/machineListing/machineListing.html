@@ -1,0 +1,44 @@
+<div>
+  <h1>Machines</h1>
+</div>
+<form class="navbar-form navbar-left">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search">
+  </div>
+</form>
+<div class="container-fluid">
+  <table>
+    <thead>
+    <tr>
+      <th></th>
+      <th>Machine Num</th>
+      <th>Last Successful Upload</th>
+      <th>Last Successful Download</th>
+      <th>Download Status</th>
+      <th>Upload Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>
+          <span class="input-group-addon">
+            <input type="checkbox" aria-label="...">
+          </span>
+      </td>
+      <td>9966867283</td>
+      <td>{{user.username}}</td>
+      <td>{{user.password}}</td>
+      <td>{{user.userrole}}</td>
+      <td>{{user.firstName}}</td>
+    </tbody>
+  </table>
+  <br>
+  <div align="center">
+    <a href="#" class="btn btn-info btn-md">
+      <span class="glyphicon glyphicon-download"></span> Download barcodes
+    </a>
+    <a href="#" class="btn btn-info btn-md">
+      <span class="glyphicon glyphicon-upload"></span> Upload barcodes
+    </a>
+  </div>
+</div>

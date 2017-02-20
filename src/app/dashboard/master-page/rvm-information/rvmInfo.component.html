@@ -1,0 +1,66 @@
+<div class="bg-col">
+  <table class="table table-striped" [mfData]="installation | dataFilter :  filterAccount : filterCity : filterSlno" #mf="mfDataTable" [mfRowsOnPage]="5">
+    <thead>
+    <tr>
+      <th style="width: 20%">
+        <mfDefaultSorter by="AccountName">Account Name</mfDefaultSorter>
+      </th>
+      <th style="width: 10%">
+        <mfDefaultSorter by="City">City</mfDefaultSorter>
+      </th>
+      <th style="width: 20%">
+        <mfDefaultSorter by="Country">Country</mfDefaultSorter>
+      </th>
+      <th style="width: 10%">
+        <mfDefaultSorter by="County">County</mfDefaultSorter>
+      </th>
+      <th style="width: 10%">
+        <mfDefaultSorter by="SerialNumber">Serial Number</mfDefaultSorter>
+      </th>
+      <th style="width: 10%">
+        <mfDefaultSorter by="State">State</mfDefaultSorter>
+      </th>
+      <th style="width: 10%">
+        <mfDefaultSorter by="Street">Street</mfDefaultSorter>
+      </th>
+      <th style="width: 10%">
+        <mfDefaultSorter by="ZipCode">Zip Code</mfDefaultSorter>
+      </th>
+    </tr>
+    <tr>
+      <th style="width: 5%">
+        <input placeholder="Filter Name/UID" class="form-control" [(ngModel)]="filterAccount"/>
+      </th>
+      <th style="width: 5%">
+        <input placeholder="City Filter" class="form-control" [(ngModel)]="filterCity"/>
+      </th>
+      <th></th>
+      <th></th>
+      <th style="width: 5%">
+        <input placeholder="Sl # Filter" class="form-control" [(ngModel)]="filterSlno"/>
+      </th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of mf.data">
+      <td>{{item.AccountName}}</td>
+      <td>{{item.City}}</td>
+      <td>{{item.Country}}</td>
+      <td>{{item.County}}</td>
+      <td>{{item.SerialNumber}}</td>
+      <td>{{item.State}}</td>
+      <td>{{item.Street}}</td>
+      <td>{{item.ZipCode}}</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="4">
+        <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+      </td>
+    </tr>
+    </tfoot>
+  </table>
+</div>

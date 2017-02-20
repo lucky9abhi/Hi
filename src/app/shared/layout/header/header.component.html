@@ -1,0 +1,28 @@
+<header class="head">
+  <div class="row">
+    <div class="col-xs-12">
+      <img class="dashoard-logo" src="../../../../assets/img/TOMRA_GROUP_White.png">
+      <ul class="user-profile nav navbar-nav pull-xs-right top-right-nav">
+        <li>
+          <div class="profile_info">
+            <span>Welcome</span>
+            <h2>{{currentUser.firstName}} {{currentUser.lastName}}</h2>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown" dropdown>
+            <a dropdown-open >
+              <i class="material-icons">keyboard_arrow_down</i>
+            </a>
+            <ul class="rt-profile dropdown-menu">
+              <li><a class="glyphicon glyphicon-user" [routerLink]="['/users-profile']"> View Profile</a></li><hr>
+              <li><a class="glyphicon glyphicon-retweet" [routerLink]="['/home']"> Impersonate</a></li><hr>
+              <li><a class="glyphicon glyphicon-cog"[routerLink]="['/setting']"> Settings</a></li><hr>
+              <li><a class="glyphicon glyphicon-log-out"[routerLink]="['/login']"> Logout</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+   </div>
+ </header>

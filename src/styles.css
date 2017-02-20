@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Angular2 material */
+@import '~@angular/material/core/theming/prebuilt/indigo-pink.css';
+
+/* bootstrap */
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js';
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css';
+
+/* Material Design fonts */
+@import "//fonts.googleapis.com/css?family=Roboto:300,400,500,700";
+@import "//fonts.googleapis.com/icon?family=Material+Icons";
+
+
+/* core applicatoin css */
+@import 'assets/common/css/irMain.css';
+@import 'assets/common/css/md.css';
+@import 'assets/common/css/bs-override.css';
+
+.help-block {
+  font-size: 12px;
+}
+
+.idle-message{
+  height: 50px;
+  font-size: 20px;
+  padding-top: 5px;
+  text-align:center;
+}

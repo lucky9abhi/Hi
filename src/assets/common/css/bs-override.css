@@ -1,0 +1,124 @@
+.main-container {
+  margin-left: 200px;
+  margin-top: 1px;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: grey;
+  top: 200px;
+  height: 0px;
+}
+
+.navbar {
+  position: relative;
+  min-height: 0px;
+  margin-bottom: -1px;
+  border: 1px solid transparent;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 0px;
+}
+
+.nav-tabs {
+  border-bottom: 0px solid #ddd;
+}
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: -130px;
+  min-width: 150px;
+  padding: 5px 0;
+  margin: 12px 0 0;
+  font-size: 15px;
+}
+
+a {
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+th  a {
+  color: black;
+}
+
+
+.navbar-nav > ul > li > a.router-link-active {
+  background-color: #ddd;
+  border-color: #ddd;
+}
+
+.menuitem-active{
+  background-color: #1fc0da;
+  border-color: #ddd;
+}
+
+md-dialog-container {
+  padding: 150px;
+}
+
+.nav-tabs>li>a {
+  margin-right: -3px;
+  line-height: 0.9;
+  border: 1px solid transparent;
+  border-radius: 0px 0px 0 0;
+}
+
+.glyphicon {
+  top: -1px;
+}
+
+.h5, h5 {
+  font-size: 15px;
+}
+
+.feedcontact  a {
+  color: black;
+}
+
+body {
+  font-size: 15px;
+}
+
+a.list-group-item, button.list-group-item {
+  color: #000;
+}
+
+.list-group-item {
+  border: 0px solid #ddd;
+}
+
+.dropdown-menu>li>a {
+  color: black;
+}
+
+/*Sign-up page*/
+body {
+  font-family: Calibri;
+  font-size: 15px;
+  line-height: 1.128571;
+  color: #333;
+  background-color: #fff;
+}
+
+.col-md-offset-5 {
+    margin-left: 37.666667%;
+  }
+
+.form-control {
+  padding: 0px 0px;
+  font-size: 15px;
+}

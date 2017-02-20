@@ -1,0 +1,9 @@
+<div>
+  <nav class="sidebar" [ngClass]="{sidebarPushRight: isActive}">
+    <ul class="list-group">
+      <a *ngFor="let item of subMenuItems; let i = index" [className]="item.menuStyle" [routerLink]="item.menuRoute" [class.menuitem-active]="i == routerService.selectedSubMenuItemIndex" >
+        <i [className]="item.submenuItemStyle"></i> {{item.menuLabel}}
+      </a>
+    </ul>
+  </nav>
+</div>

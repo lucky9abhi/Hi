@@ -1,0 +1,16 @@
+<!--dashboard header-->
+<ir-header></ir-header>
+
+<div *ngIf="timedOut" class="alert-danger idle-message">You will time out in {{count}} seconds!</div>
+<!--dashboard navbar-->
+<ir-navbar></ir-navbar>
+
+<ir-sidebar></ir-sidebar>
+
+<!--dashboard routing-->
+<section class="main-container">
+  <router-outlet></router-outlet>
+</section>
+
+<!--Footer-->
+<ir-footer></ir-footer>

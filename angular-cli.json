@@ -2,7 +2,7 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
     "version": "1.0.0-beta.32.3",
-    "name": "tna-cli"
+    "name": "ir-prototype"
   },
   "apps": [
     {
@@ -18,6 +18,7 @@
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
       "prefix": "app",
+      "mobile": false,
       "styles": [
         "styles.css"
       ],
@@ -29,6 +30,8 @@
       }
     }
   ],
+  "addons": [],
+  "packages": [],
   "e2e": {
     "protractor": {
       "config": "./protractor.conf.js"
@@ -51,6 +54,7 @@
   },
   "defaults": {
     "styleExt": "css",
-    "component": {}
+    "component": {},
+    "prefixInterfaces": false
   }
 }

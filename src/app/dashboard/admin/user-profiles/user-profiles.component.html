@@ -1,0 +1,56 @@
+<div>
+  <h1>User profiles</h1>
+</div>
+<form class="navbar-form navbar-left">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search">
+  </div>
+  <button type="submit" class="btn btn-default">Add</button>
+  <button type="submit" class="btn btn-default">Modify</button>
+</form>
+<div class="container-fluid">
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Account Id</th>
+        <th>Username</th>
+        <th>Password</th>
+        <th>User Role</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Is Active?</th>
+        <th>Belongs To</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>
+          <span class="input-group-addon">
+            <input type="checkbox" aria-label="...">
+          </span>
+        </td>
+        <td>13532</td>
+        <td>{{user.username}}</td>
+        <td>{{user.password}}</td>
+        <td>{{user.userrole}}</td>
+        <td>{{user.firstName}}</td>
+        <td>{{user.lastName}}</td>
+        <td></td>
+          <form>
+            <input class="form-control" list="service">
+              <datalist id="service">
+                <option value="IT Team">
+                <option value="Billing Team">
+                <option value="Admin Group">
+                <option value="Others">
+              </datalist>
+          </form>
+    </tbody>
+  </table>
+  <br>
+  <div align="center">
+    <button class="btn btn-default" (click)="deleteUser(user.id)">Activate</button>
+    <button class="btn btn-default" (click)="deleteUser(user.id)">De-activate</button>
+  </div>
+</div>
